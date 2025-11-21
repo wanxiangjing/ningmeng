@@ -1,0 +1,49 @@
+.kudi-page-container {
+    width: 1280px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    background-color: #fff;
+
+    display: flex;
+
+    .section {
+        width: 50%;
+        padding: 20px;
+
+        &:first-child {
+            border-right: 1px solid #ccc; 
+        }
+
+        .title{
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+    }
+
+
+    .kuaidi-list {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 1280px)  {
+    .kudi-page-container {
+        width: 100%;
+        flex-direction: column;
+        .section {
+            width: 100%;
+            padding: 20px;
+    
+            &:first-child {
+                border-bottom: 1px solid #ccc; 
+            }
+        }
+    
+    }
+    
+}
